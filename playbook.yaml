@@ -1,0 +1,10 @@
+---
+- name: Deploy Brain API backend to Minikube
+  hosts: local
+  connection: local
+
+  vars:
+    build_number: "{{ build_number }}"
+
+  roles:
+    - brain_backend
